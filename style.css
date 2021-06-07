@@ -1,3 +1,17 @@
+
+
+* {
+    padding:0px;
+    margin:0px;
+    border-sizing:border-box;
+}
+
+
+
+
+
+
+
 body{
   background-image:url(https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
   background-repeat:no-repeat;
@@ -16,27 +30,77 @@ body{
   text-align: center;
   font-family: 'Mate SC', serif;
   margin: 0 0 0 0;
+  color: gold;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #FF1F78;
+  text-align: center;
+   
 }
-.home{
-  float: left;
-  font-size: 150%;
-  color: white;
-  text-decoration: none;
-  margin-right: 10%;
+.navbar ul
+{
+    
+    display: inline-flex;
+    list-style:none;
+    color: white;
+   
+
 }
-.Latest{
-  font-size: 150%;
-  color: white;
-  text-decoration: none;
+.navbar ul li
+{
+    width:120px;
+    margin: 15px;
+    padding:15px;
+    
 }
-.Menu{
-  text-decoration: none;
-  color: white;
-  font-size: 150%;
-  margin-left: 10%;
+.navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+
+}
+
+.active, .navbar ul li:hover
+{
+    background-color: darkturquoise;
+    border-radius:3px;
+}
+
+.sub_navbar_about
+{
+    display: none;
+}
+.navbar ul li:hover .sub_navbar_about
+{
+    display:block;
+    position: absolute;
+    background-color: darkturquoise;
+    margin:15px ;
+    margin-left: -15px;
+}
+.navbar ul li:hover .sub_navbar_about ul
+{
+   display: block;
+   margin: 10px;
+}
+
+.navbar ul li:hover .sub_navbar_about ul li
+{
+    width: 80px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+
+}
+.navbar ul li:hover .sub_navbar_about ul li:last-child
+{
+   border-bottom: none; 
+}
+.navbar ul li:hover .sub_navbar_about ul li a:hover
+{
+ color: yellow;
 }
